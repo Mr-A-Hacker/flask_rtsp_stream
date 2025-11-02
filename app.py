@@ -50,7 +50,7 @@ def record_loop():
             "ffmpeg",
             "-rtsp_transport", "tcp",
             "-i", RTSP_URL,
-            "-t", "1800",  # 30 minutes
+            "-t", "7400",  # 30 minutes
             "-c", "copy",
             filename
         ])
@@ -64,7 +64,7 @@ def cleanup_loop():
             path = os.path.join("recordings", file)
             if os.path.isfile(path):
                 age = now - os.path.getmtime(path)
-                if age > 7200:  # 2 hours
+                if age > 8400:  # 2 hours
                     os.remove(path)
                     print(f"🗑️ Deleted: {file}")
         time.sleep(60)
@@ -73,4 +73,4 @@ def cleanup_loop():
 if __name__ == '__main__':
     threading.Thread(target=record_loop, daemon=True).start()
     threading.Thread(target=cleanup_loop, daemon=True).start()
-    app.run(host='0.0.0.0', port=5000, threaded=True)
+    app.run(host='0.0.0.0', port=5051, threaded=True)
