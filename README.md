@@ -124,4 +124,7 @@ MIT — use it, fork it, teach with it. Just don’t abuse it.
 This isn’t just a stream viewer. It’s a **signal**. A reminder that every device on your network tells a story — and you have the right to read it, document it, and protect it.
 
 Built by [Mr-A-Hacker](https://github.com/Mr-A-Hacker) — for those who scan, find, and restore.
-<img width="374" height="328" alt="5" src="https://github.com/user-attachments/assets/d498dc3a-5bf9-4425-a8bd-b77287ce7aaf" />
+
+
+
+<img width="374" height="328" alt="5" src="https://github.com/user-attachments/assets/1340ff30-b781-4128-ac2e-36ef2ffeaf90" />
